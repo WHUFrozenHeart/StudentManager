@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="GradeTableCell" rowHeight="119" id="KGk-i7-Jjw" customClass="GradeTableCell" customModule="StudentManager" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="72"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="71.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="课程名：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C6J-jx-Ttz">
+                        <rect key="frame" x="20" y="11" width="70" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xmv-G7-xv0">
+                        <rect key="frame" x="98" y="11" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cIP-b8-oUp">
+                        <rect key="frame" x="98" y="40" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="成绩：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hyP-k7-0vd">
+                        <rect key="frame" x="20" y="40" width="70" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="xmv-G7-xv0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="4CT-CC-Bxh"/>
+                    <constraint firstItem="cIP-b8-oUp" firstAttribute="top" secondItem="xmv-G7-xv0" secondAttribute="bottom" constant="8" id="Nsx-KM-h2H"/>
+                    <constraint firstItem="C6J-jx-Ttz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="Xuy-hT-4F3"/>
+                    <constraint firstItem="hyP-k7-0vd" firstAttribute="top" secondItem="C6J-jx-Ttz" secondAttribute="bottom" constant="8" id="afZ-ee-jnH"/>
+                    <constraint firstItem="hyP-k7-0vd" firstAttribute="width" secondItem="C6J-jx-Ttz" secondAttribute="width" id="ewJ-Cj-vpq"/>
+                    <constraint firstItem="hyP-k7-0vd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="hEc-yz-zBh"/>
+                    <constraint firstItem="C6J-jx-Ttz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="idN-sw-x4L"/>
+                    <constraint firstItem="cIP-b8-oUp" firstAttribute="leading" secondItem="hyP-k7-0vd" secondAttribute="trailing" constant="8" id="wsY-He-jjl"/>
+                    <constraint firstItem="xmv-G7-xv0" firstAttribute="leading" secondItem="C6J-jx-Ttz" secondAttribute="trailing" constant="8" id="y6v-SU-Gwc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="courseNameLabel" destination="xmv-G7-xv0" id="Yrt-UT-Cb4"/>
+                <outlet property="gradeLabel" destination="cIP-b8-oUp" id="IoB-s8-fAC"/>
+            </connections>
+            <point key="canvasLocation" x="98.400000000000006" y="80.059970014992516"/>
+        </tableViewCell>
+    </objects>
+</document>
